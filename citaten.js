@@ -7,7 +7,7 @@ export const basisCitaten = [
     prijs: '5',
     taal: 'nl'
     },
-
+    
  {
 titel: 'Chocolade',
 beschrijving: 'Melk slagroom suiker eidooiers cacaopoeder pure chocolade zout vanille ',
