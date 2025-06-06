@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citaten-app</title>
+  <link rel="stylesheet" href="stijl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+    <script src="add.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <img src="img/left-quotes.png" alt="">
+      <nav>
+        <ul>
+          <li ><a href="index.html">Overzicht</a></li>
+          <li class="hier"><a href="add.html">Vul in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="wrapper">
+    <h1> Voeg Tekst Toe </h1>
+    <form class="add">
+      <label for="titel">Titel</label>
+      <input type="text" id="titel">
+      <label for="beschrijving">Beschrijving</label>
+      <input type="text" id="beschrijving">
+      <label for="prijs">Prijs</label>
+      <input type="text" id="prijs" >
+      <input type="submit" value="Voeg citaat toe">
+    </form>
+    <div id="feedback"></div>
+</div>
+
+</body>
+
+</html>

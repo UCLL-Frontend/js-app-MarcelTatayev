@@ -1,0 +1,174 @@
+:root {
+  --titelkleur: black;
+  --headerkleur: #1058b7;
+  --navhoverbgkleur: #0d4083;
+  --navhover: rgb(249, 229, 12);
+  --afronding: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", Serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+header,
+footer {
+  background-color: var(--headerkleur);
+  box-shadow: 0 0 5px #999;
+}
+footer {
+  text-align: center;
+  color: white;
+}
+
+header div.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header img {
+  width: 45px;
+  height: 45px;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", Sans-Serif;
+  font-weight: 300;
+  color: var(--titelkleur);
+  line-height: 1.1;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: end;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #fff;
+  border-radius: var(--afronding);
+}
+
+nav ul li a:hover {
+  color: var(--navhover);
+  background-color: var(--navhoverbgkleur);
+}
+
+nav li.hier a {
+  background-color: #fff;
+  color: var(--headerkleur);
+}
+
+.wrapper {
+  max-width: 50em;
+  margin: 0px auto;
+  padding: 0.5em;
+}
+
+P.ijskost {
+  font-style: italic;
+  text-align: right;
+}
+
+.citaten article {
+  position: relative; /* nodig om absolute positie binnen article te laten werken */
+  background-color: #f5f5f5;
+  padding: 1em;
+  box-shadow: 0 0 3px #999;
+  border-radius: var(--afronding);
+  margin-bottom: 1em;
+}
+
+article .delete {
+  position: absolute;
+  left: 90%;
+  width: 28px;
+}
+
+article .delete:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(10deg);
+}
+
+form.add {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* ruimte tussen elementen */
+  max-width: 800px;
+}
+
+form.add label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+form.add input[type="text"],
+form.add input[type="submit"] {
+  padding: 1rem; /* maakt ze hoger */
+  font-size: 1.1rem; /* grotere tekst */
+  width: 100%; /* laat ze de volledige breedte gebruiken */
+  box-sizing: border-box; /* voorkomt dat padding de breedte vergroot */
+}
+
+input#prijs {
+  width: 80px;
+  text-align: center; /* Optioneel, voor nettere weergave van cijfers */
+}
+
+.stats {
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px auto; /* auto marge voor horizontaal centreren */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  width: 300px; /* vaste breedte, kun je aanpassen naar wens */
+  text-align: center; /* tekst in de div centreren */
+}
+
+.stats h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.stats p {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  margin: 8px 0;
+  color: #555;
+}
+
+.stats p::before {
+  content: "🍦 ";
+}
