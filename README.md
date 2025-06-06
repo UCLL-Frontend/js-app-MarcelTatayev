@@ -1,7 +1,7 @@
-# 🍦 Citaten-app over IJsjes
+#  Citaten-app over IJsjes
 
-Hoi! Dit is mijn kleine webapp die ik gemaakt heb in JavaScript.  
-Het is eigenlijk een soort citaten-app, maar in plaats van quotes of wijze spreuken, voeg ik hier lekkere ijsjes toe met een korte beschrijving en prijs. 😄
+Dit is mijn kleine webapp die ik gemaakt heb in JavaScript.  
+Het is eigenlijk een soort citaten-app, maar in plaats van quotes of wijze spreuken, voeg ik hier lekkere ijsjes toe met een korte beschrijving en prijs. 
 
 ## 📖 Wat kan je hier doen?
 
