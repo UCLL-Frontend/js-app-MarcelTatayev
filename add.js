@@ -6,7 +6,7 @@ document.querySelector('form.add').addEventListener('submit', (event) => {
     event.preventDefault();
     voegToe();
   });
-  
+
   function voegToe() {
     // Haal waarden op
     const titel = document.getElementById('titel').value.trim();
